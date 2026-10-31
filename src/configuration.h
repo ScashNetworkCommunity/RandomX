@@ -38,7 +38,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #define RANDOMX_ARGON_LANES        1
 
 //Argon2d salt
-#define RANDOMX_ARGON_SALT         "RandomX-Scash\x01"
+#define RANDOMX_ARGON_SALT        "RandomX-Scash\x02"
 
 //Number of random Cache accesses per Dataset item. Minimum is 2.
 #define RANDOMX_CACHE_ACCESSES     8
@@ -53,7 +53,10 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #define RANDOMX_DATASET_EXTRA_SIZE 33554368
 
 //Number of instructions in a RandomX program. Must be divisible by 8.
-#define RANDOMX_PROGRAM_SIZE       256
+#define RANDOMX_PROGRAM_SIZE_V1    256
+#define RANDOMX_PROGRAM_SIZE_V2    384
+
+#define RANDOMX_PROGRAM_MAX_SIZE   384
 
 //Number of iterations during VM execution.
 #define RANDOMX_PROGRAM_ITERATIONS 2048
